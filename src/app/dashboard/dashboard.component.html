@@ -1,0 +1,15 @@
+
+
+
+<div class="container py-2" >
+    <div class="d-flex justify-content-around">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <!-- <div class="col" *ngFor="let singleProduct of products ">
+                <app-card [product]="singleProduct"></app-card>
+            </div> -->
+            @for (singleProduct of products ; track singleProduct.id) {
+                <app-card [product]="singleProduct" ></app-card>
+            }
+        </div>
+        
+</div>
